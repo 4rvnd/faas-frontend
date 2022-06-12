@@ -27,7 +27,7 @@ function App() {
     if(fun.length <= 2){
       fun = 'function hey(){ return "Ni hai bhai kuch type kar udhar"}';
     }
-    let res = await fetch('http://3.135.184.153:8000/function/executeFunctionx1000', {
+    let res = await fetch('http://3.135.184.153:8000/function/executeFunctionx100', {
             method: 'post',
             headers: {
                     'Content-Type': 'application/json'
