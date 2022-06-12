@@ -11,7 +11,7 @@ function App() {
     if (fun.length <= 2) {
       fun = 'function hey(){ return "Ni hai bhai kuch type kar udhar"}';
     }
-    let url = "http://3.135.184.153:8000/function/executeFunction";
+    let url = "http://18.224.55.151:8000/function/executeFunction";
     const options = {
       method: "post",
       headers: {
@@ -34,7 +34,7 @@ function App() {
     if (fun.length <= 2) {
       fun = 'function hey(){ return "Ni hai bhai kuch type kar udhar"}';
     }
-    let url = "http://3.135.184.153:8000/function/executeFunctionx1000";
+    let url = "http://18.224.55.151:8000/function/executeFunctionx1000";
     const options = {
       method: "post",
       headers: {
