@@ -11,46 +11,50 @@ function App() {
     if (fun.length <= 2) {
       fun = 'function hey(){ return "Ni hai bhai kuch type kar udhar"}';
     }
-    let url = "http://18.224.55.151:8000/function/executeFunction";
-    const options = {
-      method: "post",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({ function: fun }),
-      function: fun,
-    };
-    axios
-      .post(url, options)
-      .then(function (response) {
-        setSrcDoc(response.data.response);
-      })
-      .catch(function (error) {
-        console.log(error);
-      });
+    // let url = "http://18.224.55.151:8000/function/executeFunction";
+    // const options = {
+    //   method: "post",
+    //   headers: {
+    //     "Content-Type": "application/json",
+    //   },
+    //   body: JSON.stringify({ function: fun }),
+    //   function: fun,
+    // };
+    // axios
+    //   .post(url, options)
+    //   .then(function (response) {
+    //     setSrcDoc(response.data.response);
+    //   })
+    //   .catch(function (error) {
+    //     console.log(error);
+    //   });
+      let response = eval('(' + fun + ')()');
+      setSrcDoc(response);
   }
 
   async function sendx1000(fun) {
     if (fun.length <= 2) {
       fun = 'function hey(){ return "Ni hai bhai kuch type kar udhar"}';
     }
-    let url = "http://18.224.55.151:8000/function/executeFunctionx1000";
-    const options = {
-      method: "post",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({ function: fun }),
-      function: fun,
-    };
-    axios
-      .post(url, options)
-      .then(function (response) {
-        setSrcDoc(response.data.response);
-      })
-      .catch(function (error) {
-        console.log(error);
-      });
+    // let url = "http://18.224.55.151:8000/function/executeFunctionx1000";
+    // const options = {
+    //   method: "post",
+    //   headers: {
+    //     "Content-Type": "application/json",
+    //   },
+    //   body: JSON.stringify({ function: fun }),
+    //   function: fun,
+    // };
+    // axios
+    //   .post(url, options)
+    //   .then(function (response) {
+    //     setSrcDoc(response.data.response);
+    //   })
+    //   .catch(function (error) {
+    //     console.log(error);
+    //   });
+      let response = eval('(' + fun + ')()');
+      setSrcDoc(response);
   }
 
   // useEffect(() => {
